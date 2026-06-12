@@ -24,7 +24,7 @@ jobs:
       - name: gerar jar
         run: mvn package -DskipTests
 
-      - name: login dockerhub
+      - name: login dockerhub com token
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
